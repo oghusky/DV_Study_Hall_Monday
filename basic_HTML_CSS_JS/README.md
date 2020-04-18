@@ -2,6 +2,7 @@
 In this session we will be making a simple user profile using, HTML, CSS, and Javascript. 
 
 We will be using Bootstrap to help format the layout of our profile page.
+To read more about Bootstrap click here [here](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
 
 ## Visual Analogy
 If we compare web languages to the structure of a house:
