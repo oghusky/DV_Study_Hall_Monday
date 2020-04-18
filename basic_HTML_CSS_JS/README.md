@@ -2,7 +2,7 @@
 In this session we will be making a simple user profile using, HTML, CSS, and Javascript. 
 
 We will be using Bootstrap to help format the layout of our profile page.
-To read more about Bootstrap click here [here](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+To read more about Bootstrap and what it can do click [here](https://getbootstrap.com/docs/4.4/getting-started/introduction/).
 
 ## Visual Analogy
 If we compare web languages to the structure of a house:
@@ -23,6 +23,7 @@ Javascript is comparable to the appliances in your home. Everything a user can i
 
 ### For this exercise here are the tools you will need.
 [Visual Studio Code](https://code.visualstudio.com/download)
+
 [Git Bash(Windows)](https://gitforwindows.org/)
 
 What we will be building is in the "Solved" folder of this repository.
