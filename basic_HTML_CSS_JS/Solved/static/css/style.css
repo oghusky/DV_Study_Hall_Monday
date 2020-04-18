@@ -1,0 +1,22 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1{
+  font-size: 100px;
+  margin:0;
+  padding:0;
+}
+h1,#about h3,#projects,#contact{
+  color: #0275d8;
+}
+.jumbotron h3{
+  margin-bottom: 0;
+  padding-bottom:0;
+}
+.jumbotron{
+  background-color: #292b2c;
+  color: #fafafa;
+  border-radius: 0;
+}
