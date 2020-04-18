@@ -26,3 +26,34 @@ h1,#about h3,#projects,#contact{
   color: #fafafa;
   border-radius: 0;
 }
+.card-title, .card-text, .card-header{
+  color: #292b2c;
+}
+.card-header{
+  font-size: 1.1rem;
+}
+.card-header{
+  background: none;
+}
+.card{
+  position: relative;
+  border: none;
+  margin: .25rem 0;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius:0;
+}
+#projects{
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.learn-project > a.btn{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0;
+}
+#contact > a{
+  display: block;
+}
