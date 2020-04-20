@@ -38,7 +38,7 @@ var projects = [
     language_type: "Mixture",
     description: "Advanced Visualizations",
     url: "http://google.com"
-  }
+  },
 ];
 
 // loop through list/array of dictionaries/objects
