@@ -22,9 +22,7 @@ CSS is the layout, decor, feng shui of your web page. Color, positioning, font-s
 Javascript is comparable to the appliances in your home. Everything a user can interact with is controlled by Javascript.
 
 ### For this exercise here are the tools you will need.
-[Visual Studio Code](https://code.visualstudio.com/download)
-
-[Git Bash(Windows)](https://gitforwindows.org/)
+[Visual Studio Code](https://code.visualstudio.com/download) if you do not already have it.
 
 What we will be building is in the "Solved" folder of this repository.
 
