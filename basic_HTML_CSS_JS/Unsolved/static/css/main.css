@@ -1,0 +1,31 @@
+:root{
+  --black: #2a2a2a;
+  --white: #eee;
+}
+.jumbotron{
+  background-color: var(--black);
+  color:  var(--white);
+  animation: changeHero 2s linear;
+}
+#my-name{
+  color: hsl(216, 85%, 34%);
+  font-size: 100px;
+}
+#contact{
+   background-color: var(--black);
+  color:  var(--white);
+}
+
+a{
+  display:block;
+}
+@keyframes changeHero {
+  0%{
+    opacity: 1%;
+    margin-left: 80%;
+  }
+  100%{
+    opacity: 100%;
+    margin-left: 0%;
+  }
+}
