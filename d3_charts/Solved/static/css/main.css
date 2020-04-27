@@ -1,0 +1,14 @@
+
+div.tooltip {
+  color: white;
+  position: absolute;
+  text-align: center;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: #d9534f;
+  border: 2px solid #d9534f;
+  pointer-events: none;
+}
+.bar{
+  color: #555;
+}
