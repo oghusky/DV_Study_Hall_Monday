@@ -1,9 +1,9 @@
 // set which div chart will show up in
-var barbody = d3.select("#bar-chart")
-var svg =
-  barbody.append("svg")
-    .attr("height", window.innerHeight)
-    .attr("width", window.innerWidth - 100),
+var barbody = d3.select("#bar-chart"),
+  svg =
+    barbody.append("svg")
+      .attr("height", window.innerHeight)
+      .attr("width", window.innerWidth - 100),
   // set margins
   margin = {
     top: 20,
@@ -54,6 +54,7 @@ d3.csv('Data.csv')
         new_data.push(new neighborhood_obj(Object.entries(crime_count)[key][0], Object.entries(crime_count)[key][1]))
       }
     }
+    console.log(typeof new_data);
     // ============= Bar Chart =================
 
     x.domain(new_data.map(function (d, i) {
@@ -109,7 +110,7 @@ d3.csv('Data.csv')
         tooltip
           .transition()
           .duration(500)
-          .style('opacity', 0);
+          .style('opacity', 0)
       });
   })
   .catch(err => console.log(err));

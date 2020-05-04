@@ -1,8 +1,11 @@
+
+
 var barbody = d3.select("#bar-chart");
 var svg = barbody
   .append("svg")
   .attr("height", window.innerHeight)
   .attr("width", window.innerWidth - 100)
+console.log(window.innerWidth);
 
 var margin = {
   top: 20,

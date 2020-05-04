@@ -10,5 +10,9 @@ div.tooltip {
   pointer-events: none;
 }
 .bar{
-  color: #555;
+  fill: #333;
+  transition: all 1s;
+}
+.bar:hover{
+  fill: #000;
 }
