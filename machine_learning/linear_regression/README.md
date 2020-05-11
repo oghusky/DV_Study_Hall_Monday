@@ -16,7 +16,7 @@
 
 *r2 score =* varies between 0 and 100%. A low value shows a low level of correlation 
 
-*mean square error(MSE) =* is the average of the square of the errors
+*mean square error(MSE) =* is the average of the square of the errors. A low value shows a low level of errors.
 
 ## Types of Values:
 
