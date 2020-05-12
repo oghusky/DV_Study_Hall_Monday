@@ -53,6 +53,7 @@ or
 *c =* where graph crosses y-axis
 equation for c:
 ```((sigma(y) * sigma(x^2)) - (sigma(x) * sigma(x * y)))/((total number of rows * sigma(x^2)) - (sigma(x * y)^2))```
+*sigma =* sum of the veritcal values
 
 
 
