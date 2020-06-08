@@ -1,4 +1,10 @@
-
+.bar{
+  fill: #4682b4;
+  transition: all 1s;
+}
+.bar:hover{
+  fill: slateblue;
+}
 div.tooltip {
   color: white;
   position: absolute;
@@ -8,11 +14,4 @@ div.tooltip {
   background: #d9534f;
   border: 2px solid #d9534f;
   pointer-events: none;
-}
-.bar{
-  fill: #333;
-  transition: all 1s;
-}
-.bar:hover{
-  fill: #000;
 }
