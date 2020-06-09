@@ -1,0 +1,17 @@
+.bar{
+  fill: #4682b4;
+  transition: all 1s;
+}
+.bar:hover{
+  fill: black;
+}
+div.tooltip{
+  color:white;
+  position: absolute;
+  text-align: center;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: #d9534f;
+  border: 2px solid #d9534f;
+  pointer-events: none;
+}
