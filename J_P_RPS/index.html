@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPS Game</title>
+</head>
+
+<body>
+  <script>
+    alert("Let's Play Rock Paper Scissors");
+    var options = ['r', 'p', 's'];
+    // Math floor rounds down to closest whole number
+    // math random gives number between zero && 1
+    // options length keeps index only at length of options list
+    var computer_choice = options[Math.floor(Math.random() * options.length)];
+    var user_choice = prompt("Make your choice: (r)ock, (p)aper, (s)cissors? ");
+    // double equal signs only checks value
+    // triple equal checks value && data type
+    // if (user_choice ==== "r" && computer_choice ==== "p") {
+    //   alert("You chose rock && the computer chose paper. Sorry You lose")
+    // }
+    // else if (user_choice ==== "p" && computer_choice ==== "s") {
+    //   alert("You chose paper && the computer chose scissors. Sorry You lose")
+    // }
+    // else if (user_choice ==== "s" && computer_choice ==== "r") {
+    //   alert("You chose scissors && the computer chose rock. Sorry You lose")
+    // }
+    // else if (user_choice ==== "r" && computer_choice ==== "s") {
+    //   alert("You chose rock && the computer chose scissors. You win!")
+    // }
+    // else if (user_choice ==== "p" && computer_choice ==== "r") {
+    //   alert("You chose paper && the computer chose rock. You win!")
+    // }
+    // else if (user_choice ==== "s" && computer_choice ==== "p") {
+    //   alert("You chose scissors && the computer chose paper. You win!")
+    // }
+    // else if (user_choice ==== 'r' && computer_choice ==== 'r') {
+    //   alert("You both chose rock. It's a tie")
+    // }
+    // else if (user_choice ==== 's' && computer_choice ==== 's') {
+    //   alert("You both chose scissors. It's a tie")
+    // }
+    // else if (user_choice ==== 'p' && computer_choice ==== 'p') {
+    //   alert("You both chose paper. It's a tie")
+    // }
+    // else {
+    //   alert("Please enter 'r', 'p', or 's'!")
+    // }
+    // Refactored
+    if (user_choice === 'r' && computer_choice === 's'
+      || user_choice === 'p' && computer_choice === 'r'
+      || user_choice === 's' && computer_choice === 'p') {
+      alert(
+        `You chose ${user_choice} and the computer chose ${computer_choice}. You win!`)
+    }
+    else if (user_choice === 'r' && computer_choice === 'p'
+      || user_choice === 's' && computer_choice === 'r'
+      || user_choice === 'p' && computer_choice === 's') {
+      alert(
+        `You chose ${user_choice} and the computer chose ${computer_choice}. You Lose!`)
+    }
+    else if (user_choice === computer_choice) {
+      alert(`It's a tie, You both chose ${user_choice}`)
+    }
+    else {
+      alert("I dont understand. Please type r, p or ,s!!")
+    }
+  </script>
+</body>
+
+</html>
