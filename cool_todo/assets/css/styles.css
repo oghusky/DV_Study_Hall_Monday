@@ -1,0 +1,111 @@
+/* root settings */
+:root{
+  --light-grey: #eee;
+  --standard-spacing: 1rem;
+}
+/* simple reset css */
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* keeps html and body from scrolling left and right */
+html,
+body{
+  width: 100%;
+}
+
+/* form */
+form{
+  /* sets form width */
+  width: 40%;
+  /* puts for 2 rem from top and middle of page left and right */
+  margin: 2rem auto 0rem;
+}
+div.form-group{
+  /* adds space between submit button and the rest of the form  */
+  margin-bottom: var(--standard-spacing);
+}
+p.text-right{
+  /* adds space between todo items and bottom of form */
+  margin-bottom: 0;
+}
+/* end form */
+
+/* todo list */
+#todo_list{
+  /* sets width to equal form*/
+  width: 40%;
+  /* removes padding from bootstrap auto setting of padding*/
+  padding: 0;
+  /* brings todo list to middle of page */
+  margin: 0rem auto;
+}
+/* end todo list */
+
+/* todo items */
+#todo_item{
+  /* set todo item to full width of todo list div */
+  width: 100%;
+  /* aligns todo item text to center */
+  text-align: center;
+}
+
+.todo_div{
+  /* size of text in todo item */
+  font-size: 20px;
+  /* because of boostrap auto styles bottom already has margin */
+  /* so padding is set on sides to that it matches bottom styles */
+  padding: var(--standard-spacing) var(--standard-spacing) 0 var(--standard-spacing);
+  /* makes each newly created div take up full width of parent div */
+  width: 100%;
+  /* next two lines of code make sure buttons and text stay in a row */
+  display: flex;
+  flex-direction: row;
+  /* drops text and buttons to same height level visually in todo item */
+  align-items:center;
+  /* adds light visual seperation line */
+  border-bottom: 1px solid var(--light-gray);
+  /* adds spacing in between each item */
+  margin-bottom: var(--standard-spacing);
+}
+.btn-outline-danger,
+.btn-outline-success{
+  /* next two lines remove bootstraps auto btn styles */
+  border:none;
+  outline: none;
+  /* makes buttons and todo text sit at same line height */
+  margin-top: -1rem;
+}
+.far{
+  /* controls the size of the font awesome icons */
+  font-size: 15px;
+}
+/* removes all bootstrap stylings for btn focus */
+.btn-outline-success:focus,
+.btn-outline-success:active{
+  background-color: initial;
+  color: #5cb85c;
+  border-color: transparent;
+  box-shadow: none;
+}
+/* end todo items */
+/* dynamic classes for todo items on btn clicks */
+.done{
+  /* makes font bold when check btn clicked */
+  font-weight: bold;
+  /* puts line thru text on check btn click */
+  text-decoration: line-through;
+}
+/* changes background color of each item the is clicked */
+.done-div{
+  background-color: var(--light-grey);
+}
+
+/* media queries */
+@media screen and (max-width: 414px){
+  form,
+  #todo_list{
+    width: 90%;
+  }
+}
