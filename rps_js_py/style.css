@@ -1,0 +1,51 @@
+div.score {
+      width: 50%;
+      margin: 30px auto;
+    }
+
+    div.buttons button.btn {
+      width: 100px;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .who_won{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+      }
+    div.piece_imgs{
+      width: 80%;
+      margin: 0 auto;
+    }
+img.img_one, 
+img.img_two{
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-width: 200px !important;
+}
+    @media screen and (max-width: 425px){
+      div.score{
+        display: flex !important;
+        flex-direction: row !important;
+      }
+      div.score h3{
+        font-size: 1.1rem;
+      }
+      div.score h1{
+        font-size: 2rem;
+      }
+      .player-1, .player-2{
+        max-width: 50%;
+      }
+      div.buttons button.btn{
+        font-size: .7rem;
+        width: 80px;
+        margin: 0;
+      }
+      
+      img.img_one, 
+      img.img_two{
+        max-width: 150px !important;
+      }
+    }

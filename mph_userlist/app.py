@@ -3,7 +3,7 @@ import sys
 try:
     import json
     import requests
-    from flask import Flask, render_template, request
+    from flask import Flask, render_template, request, jsonify
     from flask_pymongo import PyMongo
     from flask_cors import CORS
 except ImportError:
@@ -42,12 +42,19 @@ def insert_users():
 
 insert_users()
 
+users_list = []
 # print(list(user_list))
 
 # route methods GET, POST, PUT, DELETE <<< CRUD METHODS
 @app.route("/", methods=["GET"])
 def home():
     user_list = users.find()
+    # for user in user_list:
+    #     users_list.append({
+    #         "name": user["name"],
+    #         "email": user["email"],
+    #         "phone":user["phone"]
+    #     })
     return render_template("index.html", users=user_list)
 # post sends info back to server
 # put takes info from DB that is already existing and updates

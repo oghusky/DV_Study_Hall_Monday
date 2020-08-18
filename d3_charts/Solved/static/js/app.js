@@ -112,5 +112,19 @@ d3.csv('Data.csv')
           .duration(500)
           .style('opacity', 0)
       });
+    // vega lite code
+    var vlSpec = {
+      data: {
+        values: new_data
+      },
+      mark: "bar",
+      encoding: {
+        y: { field: "count", type: "quantitative" },
+        x: {
+          field: "name", type: "nominal"
+        }
+      }
+    }
+    vegaEmbed("#printed_data", vlSpec);
   })
   .catch(err => console.log(err));
