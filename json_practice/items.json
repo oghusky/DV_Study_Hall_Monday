@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "chicken salad",
+      "price": "2.50",
+      "description": "it's a salad",
+      "times_sold": 10
+    },
+    {
+      "id": 2,
+      "name": "chicken sandwich",
+      "price": "4.50",
+      "description": "it's a sandwich",
+      "times_sold": 30
+    },
+    {
+      "id": 3,
+      "name": "chicken tenders",
+      "price": "6.50",
+      "description": "it's tenders",
+      "times_sold": 23
+    },
+    {
+      "id": 4,
+      "name": "chicken nuggets",
+      "price": "1.50",
+      "description": "it's nuggets",
+      "times_sold": 50
+    }
+  ]
+}
