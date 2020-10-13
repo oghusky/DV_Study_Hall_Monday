@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <style>
+    .box {
+      min-height: 100px;
+      min-width: 100px;
+      background-color: blueviolet;
+    }
+
+    /*.grid {
+      display: grid;
+      grid-template-areas:
+        "one two three"
+        "four five six"
+        "seven seven six"
+
+    }
+
+    .one {
+      grid-area: one
+    }
+
+    .two {
+      grid-area: two
+    }
+
+    .three {
+      grid-area: three
+    }
+
+    .four {
+      grid-area: four
+    }
+
+    .five {
+      grid-area: five
+    }
+
+    .six {
+      grid-area: six
+    }
+
+    .seven {
+      grid-area: seven
+    }
+
+    @media only screen and (max-width: 995px) {
+      .grid {
+        grid-template-areas:
+          "one two five"
+          "four four four"
+          "six three seven"
+      }
+    }
+
+    @media only screen and (max-width: 360px) {
+      .grid {
+        grid-template-areas:
+          "one one one"
+          "one one one"
+          "one one one"
+          "one one one"
+          "six three three"
+          "two two four"
+      }
+
+      .seven {
+        display: none;
+      }
+
+      .five {
+        display: none;
+      }
+    } */
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
+
+  <h1 class="text-center display-4 text-primary">HTML/BOOTSTRAP</h1>
+  <!-- css3 grid -->
+  <!-- <img src="http://www.fillmurray.com/460/300" class="float-left" alt="">
+  <div class="row">
+    <div class="col-sm-6 col-lg-4 box one">1</div>
+    <div class="col-sm-6 col-lg-4 box two">2</div>
+    <div class="col-sm-6 col-lg-4 box three">3</div>
+    <div class="col-sm-6 col-lg-4 box four">4</div>
+    <div class="col-sm-6 col-lg-4 box five">5</div>
+    <div class="col-sm-6 col-lg-4 box six">6</div>
+    <div class="col-sm-6 col-lg-4 box seven">7</div>
+  </div> -->
+  <section class="container">
+    <img src="http://www.fillmurray.com/460/300" alt="" class="my-3 img-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-lg-4 box one">1</div>
+      <div class="col-sm-6 col-lg-4 box two">2</div>
+      <div class="col-sm-6 col-lg-4 box three">3</div>
+      <div class="col-sm-6 col-lg-4 box four">4</div>
+      <div class="col-sm-6 col-lg-4 box five">5</div>
+      <div class="col-sm-6 col-lg-4 box six">6</div>
+      <div class="col-sm-6 col-lg-4 box seven">7</div>
+    </div>
+  </section>
+  <form class="mb-5 container">
+    <div class="row">
+
+      <select name="" id="" class="form-control form-control-lg col-lg-6">
+        <option value="one">one</option>
+        <option value="one">one</option>
+        <option value="one">one</option>
+        <option value="one">one</option>
+        <option value="one">one</option>
+      </select>
+      <select name="" id="" class="form-control form-control-lg col-lg-3">
+        <option value="one">one</option>
+        <option value="one">one</option>
+        <option value="one">one</option>
+        <option value="one">one</option>
+        <option value="one">one</option>
+      </select>
+      <select name="" id="" class="form-control form-control-lg col-lg-3">
+        <option value="one">one</option>
+        <option value="one">one</option>
+        <option value="one">one</option>
+        <option value="one">one</option>
+        <option value="one">one</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="text" placeholder="Enter Name"><br>
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="email" placeholder="Enter Email"><br>
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="text" placeholder="Enter Phone"><br>
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="password" placeholder="Enter Password"><br>
+    </div>
+    <button class="btn btn-block btn-outline-primary">SUBMIT</button>
+  </form>
+  <div class="row">
+    <div class="p-3 col-lg-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="p-3 col-lg-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+    <div class="p-3 col-lg-4">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
